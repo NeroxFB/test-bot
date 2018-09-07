@@ -13,7 +13,7 @@ const bot = new TelegramBot(token, options);
 
 // This informs the Telegram servers of the new webhook.
 // Note: we do not need to pass in the cert, as it already provided
-bot.setWebHook(`${url}/bot${TOKEN}`);
+bot.setWebHook(`${url}/bot${token}`);
 
 var menu = {
   parse_mode: "html"
