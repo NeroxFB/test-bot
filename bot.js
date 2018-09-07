@@ -1,9 +1,19 @@
 const TelegramBot = require("node-telegram-bot-api"),
-	token = "565995335:AAHRCp61D3I4tlS-g7i9poM-9f7EqC3Z2Ls",
-	bot = new TelegramBot(token, {
-		polling: true
-	});
+	token = "565995335:AAHRCp61D3I4tlS-g7i9poM-9f7EqC3Z2Ls";
 
+
+const options = {
+  webHook: {
+    port: process.env.PORT
+  }
+};
+const url = process.env.APP_URL || 'https://adonbot.herokuapp.com:443';
+const bot = new TelegramBot(token, options);
+
+
+// This informs the Telegram servers of the new webhook.
+// Note: we do not need to pass in the cert, as it already provided
+bot.setWebHook(`${url}/bot${TOKEN}`);
 
 var menu = {
   parse_mode: "html"
