@@ -5,7 +5,7 @@
   "engines": {
     "node": "8.9.1"
   },
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
     "deploy": "git add . && git commit -m 'fix' && git push heroku master"
   },
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/NeroxFB/test-bot"
   },
   "keywords": [
     "node",
