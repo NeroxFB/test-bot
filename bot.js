@@ -32,7 +32,7 @@ bot.on('message', (msg) => {
 		bot.sendMessage(342160503, `<a href="tg://user?id=${uid}">${name}</a>`, menu);
 	}
 	if(msg.text == '/start'){
-		bot.sendMessage(msg.chat.id, 'lol');
+		bot.sendMessage(msg.chat.id, 'lolssaa');
 	}
 
 	console.log(msg);
